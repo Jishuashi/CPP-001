@@ -16,6 +16,11 @@ Zombie::Zombie(std::string pName) : _name(pName) { }
 
 Zombie::Zombie() { }
 
+void Zombie::setName(std::string pName)
+{
+	this->_name = pName;
+}
+
 Zombie::~Zombie()
 {
 	std::cout << _name << std::endl;

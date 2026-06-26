@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
+/*   zombieHorde.cpp                                    :+:      :+:    :+:   */ 
 /*                                                    +:+ +:+         +:+     */
 /*   By: hchartie <hchartie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/26 19:48:16 by hchartie          #+#    #+#             */
-/*   Updated: 2026/06/26 19:56:34 by hchartie         ###   ########.fr       */
+/*   Updated: 2026/06/26 21:00:27 by hchartie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
+#include <sstream>
 
 Zombie *zombieHorde(int pN, std::string pName)
 {
@@ -19,7 +20,10 @@ Zombie *zombieHorde(int pN, std::string pName)
 
 	while (i < pN)
 	{
-		/* code */
+		std::stringstream ss;
+		ss << " " << i;
+		horde[i].setName(pName + ss.str());
+		i++;
 	}
-	
+	return (&horde[0]);
 }
