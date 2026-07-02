@@ -6,7 +6,7 @@
 /*   By: hchartie <hchartie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/02 15:17:57 by hchartie          #+#    #+#             */
-/*   Updated: 2026/07/02 15:20:51 by hchartie         ###   ########.fr       */
+/*   Updated: 2026/07/02 17:29:25 by hchartie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,12 @@
 class Weapon
 {
 private:
+    std::string _type;
 public:
-    Weapon();
+    Weapon(std::string pType);
     ~Weapon();
+    void        setType(std::string pType);
+    std::string getType();
 };
 
 #endif

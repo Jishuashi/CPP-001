@@ -1,3 +1,4 @@
+#include "Weapon.hpp"
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -10,3 +11,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+Weapon::Weapon(std::string pType) : _type(pType) { }
+
+Weapon::~Weapon() { }
+
+void Weapon::setType(std::string pType)
+{
+    _type = pType;
+}
+
+std::string Weapon::getType()
+{
+    return (_type);
+}

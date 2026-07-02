@@ -6,19 +6,21 @@
 /*   By: hchartie <hchartie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/02 15:21:27 by hchartie          #+#    #+#             */
-/*   Updated: 2026/07/02 15:24:32 by hchartie         ###   ########.fr       */
+/*   Updated: 2026/07/02 17:32:13 by hchartie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HUMANA_HPP
 # define HUMANA_HPP
 # include <iostream>
-
+# include "Weapon.hpp"
 class HumanA
 {
 private:
+    Weapon      _weapon;
+    std::string _name;
 public:
-    HumanA();
+    HumanA(std::string pName);
     ~HumanA();
 };
 
