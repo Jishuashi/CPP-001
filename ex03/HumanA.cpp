@@ -11,4 +11,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-HumanA::HumanA(std::string pName, Weapon pWeapon) : _name(pName), _weapon(pWeapon) { }
+HumanA::HumanA(std::string pName, Weapon &pWeapon) : _name(pName), _weapon(pWeapon) { }
+
+HumanA::~HumanA() { }
+
+void HumanA::attack()
+{
+    std::cout << _name << " attack with thier " << _weapon.getType() << std::endl;
+}

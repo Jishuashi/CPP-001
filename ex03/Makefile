@@ -1,4 +1,4 @@
-NAME        = brain
+NAME        = violence
 
 CXX         = c++
 CXXFLAGS    = -Wall -Wextra -Werror -std=c++98 -g3
@@ -6,6 +6,9 @@ CXXFLAGS    = -Wall -Wextra -Werror -std=c++98 -g3
 RM          = rm -rf
 
 SRCS        = main.cpp			\
+			  Weapon.cpp		\
+			  HumanA.cpp		\
+			  HumanB.cpp		\
 
 OBJS        = $(SRCS:%.cpp=obj/%.o)
 

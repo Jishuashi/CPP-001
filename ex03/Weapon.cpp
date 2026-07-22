@@ -11,16 +11,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-Weapon::Weapon(std::string pType) : _type(pType) { }
+Weapon::Weapon(const std::string &pType) : _type(pType) { }
 
-Weapon::~Weapon() { }
+Weapon::Weapon( ) { }
 
-void Weapon::setType(std::string pType)
+Weapon::~Weapon( ) { }
+
+void	Weapon::setType(const std::string &pType)
 {
-    _type = pType;
+	_type = pType;
 }
 
-std::string Weapon::getType()
+const std::string	&Weapon::getType() const
 {
-    return (_type);
+	return (_type);
 }
