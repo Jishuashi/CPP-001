@@ -6,7 +6,7 @@
 /*   By: hchartie <hchartie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 16:24:22 by hchartie          #+#    #+#             */
-/*   Updated: 2026/07/22 18:03:12 by hchartie         ###   ########.fr       */
+/*   Updated: 2026/07/23 14:03:42 by hchartie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ int main(int ac, char const *av[])
     }
 
     std::ifstream 	file(av[1]);
-	std::
-
  	if (!file.is_open())
 	{
 		std::string err;
