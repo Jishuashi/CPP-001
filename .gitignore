@@ -11,3 +11,4 @@ obj
 zombie
 brain
 my_sed
+*.replace
